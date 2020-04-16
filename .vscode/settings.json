@@ -37,6 +37,5 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "workbench.editor.showTabs": false
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
