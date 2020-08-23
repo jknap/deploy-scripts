@@ -1,0 +1,103 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": "console.log({message: '||||||||||||||||||||||||||||||||||||', ${TM_SELECTED_TEXT}$1});"
+      }
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": "Theme.defaults.grid,"
+      }
+  },
+  {
+    "key": "cmd+k",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.webvieweditor.redo",
+    "when": "!editorFocus && !inputFocus && !webviewHasOwnEditFunctions && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-editor.action.webvieweditor.redo",
+    "when": "!editorFocus && !inputFocus && !webviewHasOwnEditFunctions && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.customEditor.redo",
+    "when": "focusedCustomEditorIsEditable && !inputFocus"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-editor.action.customEditor.redo",
+    "when": "focusedCustomEditorIsEditable && !inputFocus"
+  },
+  {
+    "key": "cmd+y",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+m cmd+d",
+    "command": "markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+m cmd+d",
+    "command": "markdown-preview-enhanced.openPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "-markdown-preview-enhanced.openPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+m cmd+d",
+    "command": "markdown-preview-enhanced.openPreviewToTheSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-markdown-preview-enhanced.openPreviewToTheSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  }
+]
